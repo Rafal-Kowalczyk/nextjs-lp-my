@@ -1,8 +1,7 @@
-
 .containerFluid {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
-  background-color: aqua;
+
 }
 
 .container {
@@ -11,3 +10,8 @@
   margin: 0 auto;
 }
 
+.containerFlexSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

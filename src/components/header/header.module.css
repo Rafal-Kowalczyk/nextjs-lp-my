@@ -1,0 +1,76 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.flexWrap {
+  display: none;
+}
+
+@media (min-width: 575px) {
+  .flexWrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+  }
+}
+
+
+
+/* mobile styles */
+
+.mobileHamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 26px;
+}
+
+.mobileDrawer {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.mobileClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.mobileContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 30px 40px;
+}
+
+.mobileMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileMenu a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #e8e5e5;
+  transition: all 0.25s;
+}
+
+@media (min-width: 575px) {
+  .mobileHamburger {
+    display: none;
+  }
+}

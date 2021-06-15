@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <Seo title='Basic landing page' />
+        <Seo title='Basic landing page in next.js' />
         <p>index children</p>
       </Layout>
     </>

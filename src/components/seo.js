@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup product landing page',
-  author = 'JSM',
+  description = 'basic landing page',
+  author = 'RK',
   meta,
   title = 'Next js podstawowy landing page',
 }) {
