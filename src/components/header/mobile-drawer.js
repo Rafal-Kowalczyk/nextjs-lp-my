@@ -55,6 +55,15 @@ function MobileDrawer() {
               </Link>
             ))}
           </div>
+          <div className={styles.menuFooter}>
+            <div className={styles.social}>
+              {social.map((socialItem, i) => (
+                <span key={i} className={styles.socialIcon}>
+                  <Link to={socialItem.path}>{socialItem.icon}</Link>
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </Scrollbars>
     </Drawer>

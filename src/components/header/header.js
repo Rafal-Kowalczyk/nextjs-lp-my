@@ -15,22 +15,22 @@ export default function Header({ className }) {
         className={layoutStyles.containerFlexSB}
         style={{ marginBottom: '20px' }}>
         <Logo />
-        <div className={styles.flexWrap}>
+        <div className={`${styles.flexWrap} ${styles.menuDesktop}`}>
           {menuItems.map((menuItem, i) => (
             <Link
               activeClass='active'
               to={menuItem.path}
               spy={true}
               smooth={true}
-              offset={-72}
+              offset={-70}
               duration={500}
               key={i}>
               {menuItem.label}
             </Link>
           ))}
         </div>
-        <button className='donate__btn' aria-label='Start'>
-          Start
+        <button className={styles.headerBtn} aria-label='Zobacz więcej'>
+          Zobacz więcej
         </button>
         <MobileDrawer />
       </div>
