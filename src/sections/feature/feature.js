@@ -10,7 +10,7 @@ import Support from '../../../public/images/feature/support.svg';
 import layoutStyles from '../../styles/layout.module.css';
 import styles from './feature.module.css';
 
-const dataL = [
+const dataFeature = [
   {
     id: 1,
     imgSrc: Performance,
@@ -52,7 +52,7 @@ const Feature = () => {
           title='Meet the feature of product'
         />
         <div className={styles.cardsBox}>
-          {dataL.map((item) => (
+          {dataFeature.map((item) => (
             <FeatureCard
               key={item.id}
               src={item.imgSrc}
