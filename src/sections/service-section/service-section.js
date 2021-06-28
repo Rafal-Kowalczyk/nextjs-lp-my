@@ -40,11 +40,11 @@ function ServiceSection() {
 
   return (
     <section className={layoutStyles.containerFluid}>
-      <div className={layoutStyles.container}>
+      <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
         <div className={styles.contentWrap}>
+          <h5>{dataService.subTitle}</h5>
+          <h2>{dataService.title}</h2>
           <div className={styles.desc}>
-            <h5>{dataService.subTitle}</h5>
-            <h2>{dataService.title}</h2>
             <div className={styles.descBox}>
               {dataService.services.map((item) => (
                 <div key={item.id} className={styles.descBoxItem}>
@@ -73,12 +73,12 @@ function ServiceSection() {
             </div>
           </div>
         </div>
-        {/* <ModalVideo
+        <ModalVideo
           channel='youtube'
           isOpen={videoOpen}
           videoId='mTz0GXj8NN0'
           onClose={() => setVideoOpen(false)}
-        /> */}
+        />
       </div>
     </section>
   );
