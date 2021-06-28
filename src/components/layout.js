@@ -16,8 +16,8 @@ function Layout({ children }) {
     }
   };
   return (
-    <div style={{ padding: '15px' }}>
-      <Sticky innerZ={1001} top={5} onStateChange={handleStateChange}>
+    <div className={layoutStyles.page}>
+      <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`}>menu</Header>
       </Sticky>
       <main className={layoutStyles.containerFluid}>{children}</main>

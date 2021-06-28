@@ -10,10 +10,12 @@ import styles from './header.module.css';
 
 export default function Header({ className }) {
   return (
-    <header className={`${layoutStyles.container} ${className}`} id='header'>
+    <header
+      className={`${layoutStyles.containerFluid} ${layoutStyles.marginCenter} ${className}`}
+      id='header'>
       <div
-        className={layoutStyles.containerFlexSB}
-        style={{ marginBottom: '20px' }}>
+        className={`${layoutStyles.container} ${layoutStyles.marginCenter} ${layoutStyles.containerFlexSB}`}
+        style={{ marginBottom: '10px' }}>
         <Logo />
         <div className={`${styles.flexWrap} ${styles.menuDesktop}`}>
           {menuItems.map((menuItem, i) => (

@@ -1,18 +1,29 @@
+.page {
+  padding: 15px 0;
+}
+
 .containerFluid {
   width: 100%;
   margin: 0 auto;
-  /* background-color: violet; */
+  background-color: #F9FBFD;
 }
 
 .container {
   width: 100%;
   max-width: 1024px;
+  padding: 0 15px;
+}
+
+.marginCenter {
   margin: 0 auto;
-  /* background-color: turquoise; */
 }
 
 .containerFlexSB {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.sectionHeader {
+  text-align: center;
 }
