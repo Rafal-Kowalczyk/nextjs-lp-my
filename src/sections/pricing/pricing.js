@@ -9,24 +9,6 @@ import PriceCard from '../../components/price-card';
 import layoutStyles from '../../styles/layout.module.css';
 import styles from './pricing.module.css';
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    draggable: false,
-  },
-  tablet: {
-    breakpoint: { max: 1023, min: 640 },
-    items: 2,
-    draggable: true,
-  },
-  mobile: {
-    breakpoint: { max: 639, min: 0 },
-    items: 1,
-    draggable: true,
-  },
-};
-
 const packages = {
   monthly: [
     {
@@ -240,6 +222,24 @@ const packages = {
   ],
 };
 
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    draggable: false,
+  },
+  tablet: {
+    breakpoint: { max: 1023, min: 640 },
+    items: 2,
+    draggable: true,
+  },
+  mobile: {
+    breakpoint: { max: 639, min: 0 },
+    items: 1,
+    draggable: true,
+  },
+};
+
 function Pricing() {
   const { monthly, annual } = packages;
   const [state, setState] = useState({
@@ -269,7 +269,7 @@ function Pricing() {
     className: '',
     slidesToSlide: 1,
     items: 3,
-    containerClass: 'carousel-container',
+    containerClass: `${styles.carouselContainer}`,
     customButtonGroup: <ButtonGroup />,
     dotListClass: '',
     focusOnSelect: false,

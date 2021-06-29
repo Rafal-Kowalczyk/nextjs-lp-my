@@ -62,32 +62,34 @@
   box-shadow: 0 3px 4px rgba(38, 78, 118, 0.1);
 }
 
-.carousel-container {
+.carouselContainer {
   width: 100%;
 }
 
-.carousel-container ul>li {
+.carouselContainer>ul>li {
   display: flex;
 }
 
 .pricingWrap {
+  margin-bottom: -40px;
+  margin-top: -40px;
+  margin-left: -20px;
+  margin-right: -20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: -20px -10px;
 }
 
-.pricingWrap.pricing__wrapper .package__card .package__header {
+.pricing__wrapper, .package__card, .package__header {
   animation: fadeIn 0.8s ease-in;
 }
 
 .pricingItem {
-  width: 100%;
-  /* display: flex;
+  display: flex;
   flex-shrink: 0;
-  flex: 1 1 auto; */
-  margin-left: 10px;
-  margin-right: 10px;
+  flex: 1 1 auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -96,7 +98,7 @@
 .pricingBox {
   position: relative;
   width: 100%;
-  margin: 40px auto;
+  margin: 40px 0;
   padding: 35px 25px;
   border-radius: 20px;
   transition: all 0.3s;
@@ -136,4 +138,12 @@
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
+}
+
+.pricingHeader {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 30px;
 }

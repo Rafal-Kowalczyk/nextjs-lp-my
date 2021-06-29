@@ -1,11 +1,13 @@
 import React from 'react';
+import List from './list';
+
 import stylesPricing from '../sections/pricing/pricing.module.css';
 
 function PriceCard({
   data: {
     header,
     name,
-    desc,
+    description,
     priceWithUnit,
     buttonText = 'Start free trial',
     anotherOption,
@@ -16,10 +18,11 @@ function PriceCard({
     <div className={`${stylesPricing.pricingBox}`}>
       {header && <h3 className={stylesPricing.header}>{header}</h3>}
       <div>
-        <div
-          className={`${stylesPricing.package__header} ${stylesPricing.pricingHeader}`}>
-          <h4>{name}</h4>
+        <div className={`${stylesPricing.pricingHeader}`}>
+          <h3>{name}</h3>
+          <p>{description}</p>
         </div>
+        <List items={points} />
       </div>
     </div>
   );
