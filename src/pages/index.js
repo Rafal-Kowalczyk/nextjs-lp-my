@@ -5,6 +5,7 @@ import Seo from '../components/seo';
 import Hero from '../sections/hero/hero';
 import Feature from '../sections/feature/feature';
 import ServiceSection from '../sections/service-section/service-section';
+import Pricing from '../sections/pricing/pricing';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <Feature />
         <ServiceSection />
+        <Pricing />
       </Layout>
     </>
   );

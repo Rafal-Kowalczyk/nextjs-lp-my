@@ -7,7 +7,7 @@ function Logo() {
     <div>
       <Link href='/'>
         <a style={{ display: 'flex', alignItems: 'center' }}>
-          <Image src={'/images/logo.png'} alt='Logo' width={80} height={30} />
+          <Image src={'/images/logo.svg'} alt='Logo' width={100} height={40} />
         </a>
       </Link>
     </div>

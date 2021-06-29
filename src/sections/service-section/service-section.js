@@ -10,7 +10,7 @@ import layoutStyles from '../../styles/layout.module.css';
 import styles from './service.module.css';
 
 const dataService = {
-  subTitle: 'our services',
+  subTitle: 'OUR SERVICES',
   title: 'Business Goals Achieved with Design',
   services: [
     {
@@ -73,12 +73,12 @@ function ServiceSection() {
             </div>
           </div>
         </div>
-        <ModalVideo
+        {/* <ModalVideo
           channel='youtube'
           isOpen={videoOpen}
           videoId='mTz0GXj8NN0'
           onClose={() => setVideoOpen(false)}
-        />
+        /> */}
       </div>
     </section>
   );

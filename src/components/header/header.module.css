@@ -124,13 +124,13 @@
   display: inline-block;
   margin-right: 20px;
   margin-left: auto;
-  padding: 15px 30px;
+  padding: 10px 20px;
   color: #f71f4e;
   border: 2px solid #f71f4e;
   border-radius: 45px;
   background-color:transparent;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 letter-spacing: 0.1px;
 transition: all 0.3s;
 }
