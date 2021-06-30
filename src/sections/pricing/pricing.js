@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Carousel from 'react-multi-carousel';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
-import ButtonGroup from '../../components/button-group';
+import ButtonGroup from '../../components/button-group/button-group';
 import SectionHeader from '../../components/section-header';
 import PriceCard from '../../components/price-card';
 
@@ -309,7 +309,7 @@ function Pricing() {
             </button>
           </div>
         </div>
-        <div className={`${styles.pricingWrap} ${styles.pricing__wrapper}`}>
+        <div className={`${styles.pricingWrap} ${styles.pricingAnim}`}>
           <Carousel {...sliderParams}>
             {state.pricingPlan.map((packageData) => (
               <div className={styles.pricingItem} key={packageData.id}>

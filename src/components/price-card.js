@@ -15,10 +15,17 @@ function PriceCard({
   },
 }) {
   return (
-    <div className={`${stylesPricing.pricingBox}`}>
+    <div
+      className={
+        (header
+          ? `${stylesPricing.packageHeaderAnimActive} ${stylesPricing.active}`
+          : `${stylesPricing.packageHeaderAnim}`,
+        `${stylesPricing.pricingBox}`)
+      }>
       {header && <h3 className={stylesPricing.header}>{header}</h3>}
       <div>
-        <div className={stylesPricing.pricingHeader}>
+        <div
+          className={` ${stylesPricing.packageHeaderAnim} ${stylesPricing.pricingHeader}`}>
           <h3>{name}</h3>
           <p>{description}</p>
         </div>

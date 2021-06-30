@@ -21,7 +21,7 @@ function Layout({ children }) {
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`}>menu</Header>
       </Sticky>
       <main className={layoutStyles.containerFluid}>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -131,8 +131,8 @@
   background-color:transparent;
   font-weight: 600;
   font-size: 14px;
-letter-spacing: 0.1px;
-transition: all 0.3s;
+  letter-spacing: 0.1px;
+  transition: all 0.3s;
 }
 
 .headerBtn:hover {
