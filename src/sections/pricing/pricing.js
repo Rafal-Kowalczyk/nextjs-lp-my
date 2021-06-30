@@ -48,7 +48,7 @@ const packages = {
       id: 2,
       name: 'Business king',
       description: 'For Enterprise business',
-      priceWithUnit: '$15',
+      priceWithUnit: '$25',
       buttonText: 'Create account',
       anotherOption: 'Or Start 14 Days trail',
       points: [
@@ -84,7 +84,7 @@ const packages = {
       headerIcon: <IoIosCheckmarkCircle />,
       name: 'Pro Master',
       description: 'For pro level developers',
-      priceWithUnit: '$24',
+      priceWithUnit: '$34',
       buttonText: 'Create account',
       anotherOption: 'Or Start 14 Days trail',
       points: [
@@ -153,7 +153,7 @@ const packages = {
       id: 2,
       name: 'Business king',
       description: 'For Enterprise business',
-      priceWithUnit: '$25',
+      priceWithUnit: '$20',
       buttonText: 'Create account',
       anotherOption: 'Or Start 10 Days trail',
       points: [
@@ -189,7 +189,7 @@ const packages = {
       headerIcon: <IoIosCheckmarkCircle />,
       name: 'Pro Master',
       description: 'For pro level developers',
-      priceWithUnit: '$39',
+      priceWithUnit: '$28',
       buttonText: 'Create account',
       anotherOption: 'Or Start 10 Days trail',
       points: [

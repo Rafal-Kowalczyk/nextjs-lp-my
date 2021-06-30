@@ -18,11 +18,30 @@ function PriceCard({
     <div className={`${stylesPricing.pricingBox}`}>
       {header && <h3 className={stylesPricing.header}>{header}</h3>}
       <div>
-        <div className={`${stylesPricing.pricingHeader}`}>
+        <div className={stylesPricing.pricingHeader}>
           <h3>{name}</h3>
           <p>{description}</p>
         </div>
         <List items={points} />
+        <p
+          className={`${stylesPricing.packagePriceAnim} ${stylesPricing.price}`}>
+          {priceWithUnit}
+          <span>/Monthly</span>
+        </p>
+        <div className={stylesPricing.buttonPriceWrap}>
+          <button
+            className={`${stylesPricing.buttonPrice} ${stylesPricing.packagePriceAnim}`}
+            aria-label={buttonText}>
+            {buttonText}
+          </button>
+          {anotherOption && (
+            <button
+              className={`${stylesPricing.freeTrial} ${stylesPricing.packagePriceAnim}`}
+              aria-label={anotherOption}>
+              {anotherOption}
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
