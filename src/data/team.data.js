@@ -1,10 +1,10 @@
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import Member1 from '../../../public/images/team/member-1.png';
-import Member2 from '../../../public/images/team/member-2.png';
-import Member3 from '../../../public/images/team/member-3.png';
-import Member4 from '../../../public/images/team/member-4.png';
-import Member5 from '../../../public/images/team/member-5.png';
-import Member6 from '../../../public/images/team/member-6.png';
+import Member1 from '../../public/images/team/member-1.png';
+import Member2 from '../../public/images/team/member-2.png';
+import Member3 from '../../public/images/team/member-3.png';
+import Member4 from '../../public/images/team/member-4.png';
+import Member5 from '../../public/images/team/member-5.png';
+import Member6 from '../../public/images/team/member-6.png';
 
 const data = [
   {

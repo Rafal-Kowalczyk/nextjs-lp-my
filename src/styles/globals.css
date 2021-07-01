@@ -1,31 +1,3 @@
-:root {
-  --white: '#ffffff';
-  --black: '#000000';
-  --text: '#343D48';
-  /*body color and primary color */
-  --text_secondary: '#02073E';
-  /* secondary body color*/
-  --heading: '#0F2137';
-  /* primary heading color*/
-  --heading_secondary: '#0F2137';
-  /* heading color*/
-  --background: '#FFFFFF';
-  /* body background color*/
-  --background_secondary: '#F9FBFD';
-  /* secondary background color*/
-  --border_color: '#E5ECF4';
-  /* border color*/
-  --yellow: '#FFA740';
-  /* border color*/
-  --primary: '#EA3A60';
-  /* primary button and link color*/
-  --secondary: '#2563FF';
-  /* secondary color - can be used for hover states*/
-  --muted: '#E4E4E4';
-  /* muted color*/
-  --accent: '#609';
-  /* a contrast color for emphasizing UI*/
-}
 
 *,
 *::before,
@@ -83,7 +55,7 @@ img {
   width: 100%;
   height: auto;
 }
-
+/*
 .sticky {
   position: fixed;
   top: 0;
@@ -93,5 +65,4 @@ img {
   color: #343D48;
   box-shadow: 0 1px 6px 0  rgba(0,0,0,0.6);
   padding-top: 10px;
-}
-
+} */

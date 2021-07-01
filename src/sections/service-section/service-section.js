@@ -1,34 +1,13 @@
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
-
-import Smart from '../../../public/images/feature/subscription.svg';
-import Secure from '../../../public/images/feature/partnership.svg';
-import BgVideo from '../../../public/images/service-thumb.png';
 import { IoIosPlay } from 'react-icons/io';
+
+import SectionHeader from '../../components/section-header';
+import data from '../../data/service.data';
+import BgVideo from '../../../public/images/service-thumb.png';
 
 import layoutStyles from '../../styles/layout.module.css';
 import styles from './service.module.css';
-
-const dataService = {
-  subTitle: 'OUR SERVICES',
-  title: 'Business Goals Achieved with Design',
-  services: [
-    {
-      id: 1,
-      imgSrc: Smart,
-      altText: 'Smart',
-      title: 'Smart Features',
-      text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-    },
-    {
-      id: 2,
-      imgSrc: Secure,
-      altText: 'Secure',
-      title: 'Secure Contents',
-      text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-    },
-  ],
-};
 
 function ServiceSection() {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -42,11 +21,13 @@ function ServiceSection() {
     <section className={layoutStyles.containerFluid}>
       <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
         <div className={styles.contentWrap}>
-          <h5>{dataService.subTitle}</h5>
-          <h2>{dataService.title}</h2>
+          <SectionHeader
+            slogan='OUR SERVICES'
+            title='Business Goals Achieved with Design'
+          />
           <div className={styles.desc}>
             <div className={styles.descBox}>
-              {dataService.services.map((item) => (
+              {data.map((item) => (
                 <div key={item.id} className={styles.descBoxItem}>
                   <img
                     src={item.imgSrc}

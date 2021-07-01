@@ -1,0 +1,22 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  font-size: 14px,
+  mb  30px;
+  color:#343D48;
+}
+
+.open {
+  opacity: 1;
+}
+
+.closed {
+  opacity: 0.55;
+}
+
+.listIcon {
+  width: 25px;
+  height: auto;
+  color: #ea3a60;
+  font-size: 1.6rem;
+}

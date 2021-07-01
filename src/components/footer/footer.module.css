@@ -43,14 +43,14 @@ padding: 20px;
 }
 
 .footerSocialIcon {
-font-size: 20px;
+font-size: 16px;
 color: #343d48;
 transition: all 0.3s;
 }
 
 .footerSocialIcon:hover {
   transform: scale(1.1);
-  color: red;
+  color: #fd0442;
   }
 
   .footerCopy {

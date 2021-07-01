@@ -1,8 +1,8 @@
 import React from 'react';
 
 import SectionHeader from '../../components/section-header';
-import TeamCard from '../../components/team-card';
-import data from './team-data';
+import TeamCard from '../../components/team-card/team-card';
+import data from '../../data/team.data';
 
 import layoutStyles from '../../styles/layout.module.css';
 import styles from './team.module.css';

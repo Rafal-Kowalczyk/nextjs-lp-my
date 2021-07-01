@@ -1,8 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 import Logo from '../logo';
-import data from './footer.data';
+import data from '../../data/footer.data';
+import social from '../../data/social-icon.data';
 
 import layoutStyles from '../../styles/layout.module.css';
 import styles from './footer.module.css';
@@ -26,26 +26,16 @@ function Footer() {
               ))}
             </div>
             <div className={styles.footerSocial}>
-              <Link href='/'>
-                <a className={styles.footerSocialIcon}>
-                  <FaGithubSquare />
-                </a>
-              </Link>
-              <Link href='/'>
-                <a className={styles.footerSocialIcon}>
-                  <FaLinkedin />
-                </a>
-              </Link>
-              <Link href='/'>
-                <a className={styles.footerSocialIcon}>
-                  <FaFacebookSquare />
-                </a>
-              </Link>
+              {social.map((item, i) => (
+                <span key={i} className={styles.footerSocialIcon}>
+                  <Link to={item.path}>{item.icon}</Link>
+                </span>
+              ))}
             </div>
           </div>
           <div className={styles.footerCopy}>
-            <p> Idea design Startup Landing</p>
-            <p>Use and performance</p>
+            <p>Idea design Startup Landing</p>
+            <p>Use and performance RK . 2021</p>
           </div>
         </div>
       </div>

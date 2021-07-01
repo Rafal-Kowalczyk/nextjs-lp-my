@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import List from './list';
+import List from '../list/list';
 
-import stylesPricing from '../sections/pricing/pricing.module.css';
+import stylesPricing from '../../sections/pricing/pricing.module.css';
+import styles from './price-card.module.css';
 
 function PriceCard({
   data: {
@@ -18,32 +19,31 @@ function PriceCard({
     <div
       className={
         (header
-          ? `${stylesPricing.packageHeaderAnimActive} ${stylesPricing.active}`
-          : `${stylesPricing.packageHeaderAnim}`,
-        `${stylesPricing.pricingBox}`)
+          ? `${stylesPricing.packageAnim} ${stylesPricing.active}`
+          : `${stylesPricing.packageAnim}`,
+        `${styles.pricingBox}`)
       }>
-      {header && <h3 className={stylesPricing.header}>{header}</h3>}
+      {header && <h3 className={styles.header}>{header}</h3>}
       <div>
         <div
-          className={` ${stylesPricing.packageHeaderAnim} ${stylesPricing.pricingHeader}`}>
+          className={` ${stylesPricing.packageAnim} ${styles.pricingHeader}`}>
           <h3>{name}</h3>
           <p>{description}</p>
         </div>
         <List items={points} />
-        <p
-          className={`${stylesPricing.packagePriceAnim} ${stylesPricing.price}`}>
+        <p className={`${stylesPricing.packagePriceAnim} ${styles.price}`}>
           {priceWithUnit}
           <span>/Monthly</span>
         </p>
-        <div className={stylesPricing.buttonPriceWrap}>
+        <div className={styles.buttonPriceWrap}>
           <button
-            className={`${stylesPricing.buttonPrice} ${stylesPricing.packagePriceAnim}`}
+            className={`${styles.buttonPrice} ${stylesPricing.packagePriceAnim}`}
             aria-label={buttonText}>
             {buttonText}
           </button>
           {anotherOption && (
             <button
-              className={`${stylesPricing.freeTrial} ${stylesPricing.packagePriceAnim}`}
+              className={`${styles.freeTrial} ${stylesPricing.packagePriceAnim}`}
               aria-label={anotherOption}>
               {anotherOption}
             </button>

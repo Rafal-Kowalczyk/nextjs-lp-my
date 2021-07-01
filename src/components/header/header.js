@@ -3,22 +3,22 @@ import { Link } from 'react-scroll';
 import Logo from '../logo';
 import MobileDrawer from './mobile-drawer';
 
-import menuItems from './header.data';
+import data from '../../data/header.data';
 
 import layoutStyles from '../../styles/layout.module.css';
 import styles from './header.module.css';
 
-export default function Header({ className }) {
+export default function Header() {
   return (
     <header
-      className={`${layoutStyles.containerFluid} ${layoutStyles.marginCenter} ${className}`}
+      className={`${layoutStyles.containerFluid} ${layoutStyles.marginCenter}`}
       id='header'>
       <div
         className={`${layoutStyles.container} ${layoutStyles.marginCenter} ${layoutStyles.containerFlexSB}`}
         style={{ marginBottom: '10px' }}>
         <Logo />
         <div className={`${styles.flexWrap} ${styles.menuDesktop}`}>
-          {menuItems.map((menuItem, i) => (
+          {data.map((menuItem, i) => (
             <Link
               activeClass='active'
               to={menuItem.path}
@@ -40,7 +40,6 @@ export default function Header({ className }) {
           className={styles.headerBtn}>
           Kontakt
         </Link>
-
         <MobileDrawer />
       </div>
     </header>

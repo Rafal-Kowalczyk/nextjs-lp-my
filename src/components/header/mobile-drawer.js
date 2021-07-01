@@ -2,26 +2,12 @@ import React, { useState } from 'react';
 import Drawer from '../drawer';
 import Scrollbars from 'react-custom-scrollbars';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
-import { FaFacebookF, FaLinkedinIn, FaGitAlt } from 'react-icons/fa';
+
 import { Link } from 'react-scroll';
 
-import menuItems from './header.data';
+import menuItems from '../../data/header.data';
+import social from '../../data/social-icon.data';
 import styles from './header.module.css';
-
-const social = [
-  {
-    path: '/',
-    icon: <FaFacebookF />,
-  },
-  {
-    path: '/',
-    icon: <FaLinkedinIn />,
-  },
-  {
-    path: '/',
-    icon: <FaGitAlt />,
-  },
-];
 
 function MobileDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -39,12 +25,12 @@ function MobileDrawer() {
       closeButton={<IoMdClose size='26px' />}
       drawerStyle={styles.mobileDrawer}
       closeBtnStyle={styles.mobileClose}>
-      <Scrollbars autoHide>
+      <Scrollbars autoHide style={{ position: 'absolute' }}>
         <div className={styles.mobileContent}>
           <div className={styles.mobileMenu}>
             {menuItems.map((menuItem, i) => (
               <Link
-                activeClass='active'
+                activeClass={styles.active}
                 to={menuItem.path}
                 spy={true}
                 smooth={true}
