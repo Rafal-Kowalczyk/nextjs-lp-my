@@ -31,9 +31,16 @@ export default function Header({ className }) {
             </Link>
           ))}
         </div>
-        <button className={styles.headerBtn} aria-label='Zobacz więcej'>
-          Zobacz więcej
-        </button>
+        <Link
+          to='contact'
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className={styles.headerBtn}>
+          Kontakt
+        </Link>
+
         <MobileDrawer />
       </div>
     </header>
