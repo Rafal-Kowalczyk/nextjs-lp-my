@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Carousel from 'react-multi-carousel';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
@@ -247,6 +247,13 @@ function Pricing() {
     pricingPlan: monthly,
   });
 
+  const [value, setValue] = useState();
+
+  const refresh = () => {
+    setValue('');
+    console.log('refresh');
+  };
+
   const handlePricingPlan = (plan) => {
     if (plan === 'annual') {
       setState({
@@ -260,6 +267,10 @@ function Pricing() {
       });
     }
   };
+
+  useEffect(() => {
+    refresh();
+  }, [state]);
 
   const sliderParams = {
     additionalTransfrom: 0,
@@ -300,6 +311,7 @@ function Pricing() {
               onClick={() => handlePricingPlan('monthly')}>
               Monthly Plan
             </button>
+
             <button
               className={state.active === 'annual' ? `${styles.active}` : ''}
               type='button'
@@ -313,7 +325,7 @@ function Pricing() {
           <Carousel {...sliderParams}>
             {state.pricingPlan.map((packageData) => (
               <div className={styles.pricingItem} key={packageData.id}>
-                <PriceCard data={packageData} />
+                <PriceCard data={packageData} refresh={refresh} />
               </div>
             ))}
           </Carousel>
