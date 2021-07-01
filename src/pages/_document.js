@@ -8,7 +8,7 @@ class CustomDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en-US'>
         <Head />
         <body>
           <Main />

@@ -1,6 +1,8 @@
 import React from 'react';
 import RcDrawer from 'rc-drawer';
 
+import styles from './header/header.module.css';
+
 function Drawer({
   className,
   children,
@@ -36,7 +38,7 @@ function Drawer({
       </RcDrawer>
 
       <div
-        className='drawer__handler'
+        className={'drawer__handler'}
         style={{ display: 'inline-block' }}
         onClick={toogleHandler}>
         {drawerHandler}

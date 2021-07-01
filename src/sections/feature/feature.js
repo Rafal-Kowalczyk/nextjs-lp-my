@@ -44,7 +44,7 @@ const dataFeature = [
 const Feature = () => {
   return (
     <section
-      id='feature'
+      id='features'
       className={`${layoutStyles.containerFluid} ${styles.section}`}>
       <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
         <SectionHeader

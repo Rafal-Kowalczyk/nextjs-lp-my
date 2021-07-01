@@ -3,6 +3,11 @@
   margin-bottom: 20px;
 }
 
+@media(min-width: 1200px) {
+  .buttonGroupWrap {
+    display: none;
+  }
+}
 .buttonGroup {
   display: flex;
   justify-content: center;

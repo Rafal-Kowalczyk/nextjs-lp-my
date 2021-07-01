@@ -285,7 +285,7 @@ function Pricing() {
   };
 
   return (
-    <section className={layoutStyles.containerFluid}>
+    <section className={layoutStyles.containerFluid} id='pricing'>
       <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
         <SectionHeader
           slogan='PRICING PLAN'

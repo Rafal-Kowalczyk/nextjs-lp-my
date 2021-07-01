@@ -1,0 +1,132 @@
+.containerMargin {
+  margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  .containerMargin {
+  margin-top: 100px;
+  }
+}
+
+.teamWrap {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 5px;
+ text-align: center;
+ margin-top: 80px;
+}
+
+.teamCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+
+.teamCard:hover {
+  box-shadow: 0 4px 10px rgba(39, 83, 123, 0.12);
+}
+
+.teamCard:hover .teamItemName,
+.teamCard:hover .teamItemDesign {
+  color: #ea3a60;
+}
+
+.teamItemImg {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border: 2px solid #ea3a60;
+  border-radius: 50%;
+}
+
+.teamItemName {
+  margin: 10px auto 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  transition: color 0.25s;
+}
+
+.teamItemDesign {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color:#343d48;
+  transition: color 0.25s;
+}
+
+.socialShare {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5px;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.socialShare a {
+  padding-right: 3px;
+  padding-left: 3px;
+  color: #343d48;
+  transition: all 0.25s;
+}
+
+.socialShare a:hover {
+  color: #ea3a60;
+}
+
+@media (min-width: 640px) {
+
+  .teamItemImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .teamItemName {
+    font-size: 16px;
+  }
+
+  .teamItemDesign {
+    font-size: 14px;
+  }
+
+  .socialShare {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  .teamCard:hover .socialShare {
+    opacity: 1;
+  }
+
+  .socialShare a {
+    color: #ea3a60;
+    font-size: 16px;
+  }
+    .socialShare a:hover {
+    margin: 0;
+    padding: 5px 3px;
+    color: #343d48;
+  }
+}
+
+@media (min-width: 768px) {
+  .teamWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 50px;
+   }
+
+}

@@ -39,7 +39,7 @@ function MobileDrawer() {
       closeButton={<IoMdClose size='26px' />}
       drawerStyle={styles.mobileDrawer}
       closeBtnStyle={styles.mobileClose}>
-      <Scrollbars autoHide style={{ position: 'absolute' }}>
+      <Scrollbars autoHide>
         <div className={styles.mobileContent}>
           <div className={styles.mobileMenu}>
             {menuItems.map((menuItem, i) => (
