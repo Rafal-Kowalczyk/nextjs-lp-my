@@ -11,7 +11,7 @@ import styles from './header.module.css';
 export default function Header({ className }) {
   return (
     <header
-      className={`${layoutStyles.containerFluid} ${layoutStyles.marginCenter} ${styles.header} ${className}`}
+      className={`${layoutStyles.containerFluid} ${styles.header} ${className}`}
       id='header'>
       <div
         className={`${layoutStyles.container} ${layoutStyles.marginCenter} ${layoutStyles.containerFlexSB}`}

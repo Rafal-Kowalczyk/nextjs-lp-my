@@ -12,7 +12,7 @@ const Feature = () => {
     <section
       id='features'
       className={`${layoutStyles.containerFluid} ${styles.section}`}>
-      <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
+      <div className={`${layoutStyles.container} `}>
         <SectionHeader
           slogan='WHATS THE FUNCTION'
           title='Meet the feature of product'

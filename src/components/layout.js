@@ -17,8 +17,10 @@ function Layout({ children }) {
   };
   return (
     <div className={layoutStyles.page}>
-      <Sticky innerZ={1001} top={10} onStateChange={handleStateChange}>
-        <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
+      <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
+        <Header
+          className={`${isSticky ? `${layoutStyles.sticky}` : 'unSticky'}`}
+        />
       </Sticky>
       <main className={layoutStyles.containerFluid}>{children}</main>
       <Footer />

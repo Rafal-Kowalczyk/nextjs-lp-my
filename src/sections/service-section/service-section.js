@@ -19,7 +19,7 @@ function ServiceSection() {
 
   return (
     <section className={layoutStyles.containerFluid}>
-      <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
+      <div className={`${layoutStyles.container}`}>
         <div className={styles.contentWrap}>
           <SectionHeader
             slogan='OUR SERVICES'

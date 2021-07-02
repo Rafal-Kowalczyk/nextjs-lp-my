@@ -12,8 +12,7 @@ function Footer() {
     <div
       className={`${layoutStyles.containerFluid} ${styles.footer}`}
       id='contact'>
-      <div
-        className={`${layoutStyles.container} ${layoutStyles.marginCenter} `}>
+      <div className={`${layoutStyles.container}`}>
         <div className={styles.footerWrap}>
           <Logo />
           <div className={styles.footerConatct}>

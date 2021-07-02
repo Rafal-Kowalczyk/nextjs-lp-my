@@ -14,10 +14,9 @@
 .header {
   position: absolute;
   left: 0;
-  top: -10px;
+  top: 0;
   width: 100%;
   color: #343D48;
-  background-color: #F9FBFD;
   transition: all 0.4s ease;
   animation: positionAnim 0.4s ease;
 }

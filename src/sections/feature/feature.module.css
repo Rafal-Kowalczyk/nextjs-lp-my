@@ -1,8 +1,6 @@
 .section {
   position: relative;
   z-index: 2;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .flexDiv {

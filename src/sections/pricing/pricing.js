@@ -83,8 +83,10 @@ function Pricing() {
   // }, [state]);
 
   return (
-    <section className={layoutStyles.containerFluid} id='pricing'>
-      <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
+    <section
+      className={`${layoutStyles.containerFluid} ${styles.pricingSection}`}
+      id='pricing'>
+      <div className={`${layoutStyles.container}`}>
         <SectionHeader
           slogan='PRICING PLAN'
           title='Choose your pricing policy'

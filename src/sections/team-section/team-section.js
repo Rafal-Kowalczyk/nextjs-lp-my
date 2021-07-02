@@ -12,7 +12,7 @@ function TeamSection() {
     <div
       className={`${layoutStyles.containerFluid} ${styles.containerMargin}`}
       id='team'>
-      <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
+      <div className={`${layoutStyles.container}`}>
         <SectionHeader
           slogan='OUR TEAM'
           title='The most qualified and talented individuals'
