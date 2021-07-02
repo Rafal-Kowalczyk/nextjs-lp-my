@@ -12,7 +12,7 @@ export default [
     label: 'Pricing',
   },
   {
-    path: 'contact',
-    label: 'Contact',
+    path: 'team',
+    label: 'Team',
   },
 ];

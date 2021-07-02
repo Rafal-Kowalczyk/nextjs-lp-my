@@ -9,7 +9,9 @@ import styles from './team.module.css';
 
 function TeamSection() {
   return (
-    <div className={`${layoutStyles.containerFluid} ${styles.containerMargin}`}>
+    <div
+      className={`${layoutStyles.containerFluid} ${styles.containerMargin}`}
+      id='team'>
       <div className={`${layoutStyles.container} ${layoutStyles.marginCenter}`}>
         <SectionHeader
           slogan='OUR TEAM'

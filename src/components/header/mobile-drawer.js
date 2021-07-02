@@ -22,14 +22,13 @@ function MobileDrawer() {
       }
       open={isDrawerOpen}
       toogleHandler={() => setIsDrawerOpen((prevState) => !prevState)}
-      closeButton={<IoMdClose size='26px' />}
-      drawerStyle={styles.mobileDrawer}
-      closeBtnStyle={styles.mobileClose}>
-      <Scrollbars autoHide style={{ position: 'absolute' }}>
+      closeButton={<IoMdClose size='26px' />}>
+      <Scrollbars autoHide>
         <div className={styles.mobileContent}>
           <div className={styles.mobileMenu}>
             {menuItems.map((menuItem, i) => (
               <Link
+                onClick={() => setIsDrawerOpen((prevState) => !prevState)}
                 activeClass={styles.active}
                 to={menuItem.path}
                 spy={true}

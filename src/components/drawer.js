@@ -13,8 +13,7 @@ function Drawer({
   open,
   width,
   placement,
-  drawerStyle,
-  closeBtnStyle,
+
   ...props
 }) {
   return (
@@ -22,7 +21,7 @@ function Drawer({
       <RcDrawer
         open={open}
         onClose={toogleHandler}
-        className={`drawer ${className || ''}`.trim()}
+        className={`${className || ''}`.trim()}
         width={width}
         placement={placement}
         handler={false}
@@ -30,11 +29,11 @@ function Drawer({
         duration={'0.4s'}
         {...props}>
         {closeButton && (
-          <div onClick={toogleHandler} style={{ closeBtnStyle }}>
+          <div onClick={toogleHandler} className={styles.mobileClose}>
             {closeButton}
           </div>
         )}
-        <div style={{ drawerStyle }}>{children}</div>
+        <div className={styles.mobileDrawer}>{children}</div>
       </RcDrawer>
 
       <div
