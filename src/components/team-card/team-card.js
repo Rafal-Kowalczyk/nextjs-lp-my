@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import teamStyles from '../../sections/team-section/team.module.css';
 import styles from './team-card.module.css';
 
 function TeamCard({ src, altText, title, designation, social }) {

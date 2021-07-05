@@ -1,6 +1,7 @@
 .section {
   position: relative;
   z-index: 2;
+  background-color: rgba(236, 236, 236, 0.3);
 }
 
 .flexDiv {
@@ -8,7 +9,7 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
   height: 500px;
   background-color: aqua;
 }
@@ -23,10 +24,10 @@
 
 /* featue-card styles */
 .card {
-width: 100%;
-margin-bottom: 20px;
-padding: 10px;
-text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .cardImg {
@@ -38,7 +39,7 @@ text-align: center;
 /* breakpoints */
 @media (min-width: 575px) {
   .cardsBox {
-justify-content: space-evenly;
+    justify-content: space-evenly;
   }
 
   .card {

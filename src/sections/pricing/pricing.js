@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 
 import data from '../../data/pricing.data';
@@ -57,13 +57,6 @@ function Pricing() {
     pricingPlan: monthly,
   });
 
-  // const [value, setValue] = useState();
-
-  // const refresh = () => {
-  //   setValue('');
-  //   console.log('refresh');
-  // };
-
   const handlePricingPlan = (plan) => {
     if (plan === 'annual') {
       setState({
@@ -77,10 +70,6 @@ function Pricing() {
       });
     }
   };
-
-  // useEffect(() => {
-  //   refresh();
-  // }, [state]);
 
   return (
     <section

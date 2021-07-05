@@ -1,9 +1,8 @@
 .listItem {
   display: flex;
   align-items: center;
-  font-size: 14px,
-  mb  30px;
-  color:#343D48;
+  font-size: 14px;
+  color: #343D48;
 }
 
 .open {

@@ -4,14 +4,14 @@
 
 @media (min-width: 1200px) {
   .containerMargin {
-  margin-top: 100px;
+    margin-top: 100px;
   }
 }
 
 .teamWrap {
- display: grid;
- grid-template-columns: 1fr 1fr;
- gap: 5px;
- text-align: center;
- margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+  margin-top: 80px;
 }

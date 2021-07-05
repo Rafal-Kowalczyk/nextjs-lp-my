@@ -37,7 +37,6 @@
 .videoBox {
   position: relative;
   display: inline-flex;
-  /* order: 2; */
 }
 
 .videoImg {
@@ -116,5 +115,4 @@
   .videoImg {
     max-width: 100%;
   }
-
 }

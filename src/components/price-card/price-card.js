@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import List from '../list/list';
 
 import stylesPricing from '../../sections/pricing/pricing.module.css';

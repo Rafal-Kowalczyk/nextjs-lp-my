@@ -6,7 +6,7 @@ import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
 
 import menuItems from '../../data/header.data';
-import social from '../../data/social-icon.data';
+import social from '../../data/social-icons.data';
 import styles from './header.module.css';
 
 function MobileDrawer() {
