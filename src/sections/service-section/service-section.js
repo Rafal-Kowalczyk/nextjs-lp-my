@@ -55,12 +55,12 @@ function ServiceSection() {
             </div>
           </div>
         </div>
-        {/* <ModalVideo
-          channel='youtube'
+        <ModalVideo
+          channel="youtube"
           isOpen={videoOpen}
-          videoId='iGBERMGMIvc'
+          videoId="iGBERMGMIvc"
           onClose={() => setVideoOpen(false)}
-        /> */}
+        />
       </div>
     </section>
   );
