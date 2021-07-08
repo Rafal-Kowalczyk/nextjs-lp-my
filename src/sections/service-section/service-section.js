@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 import { IoIosPlay } from "react-icons/io";
 
 import SectionHeader from "../../components/section-header";
@@ -8,6 +8,15 @@ import BgVideo from "../../../public/images/service-thumb.png";
 
 import layoutStyles from "../../styles/layout.module.css";
 import styles from "./service.module.css";
+
+import dynamic from "next/dynamic";
+
+const ModalVideo = dynamic(
+  () => {
+    return import("react-modal-video");
+  },
+  { ssr: false }
+);
 
 function ServiceSection() {
   const [videoOpen, setVideoOpen] = useState(false);
